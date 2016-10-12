@@ -64,3 +64,15 @@ body {
 .hidden {
   display: none;
 }
+
+ul.list-unstyled {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  }
+}

@@ -1,14 +1,28 @@
-@import "vars";
 @import "fonts";
-@import "base";
-@import "font-awesome/_font-awesome";
+@import "font-awesome/font-awesome";
 @import "bootstrap";
+@import "vars";
+@import "base";
+@import "../img/assets/index-pics/*.png";
+@import "../img/assets/index-pics_hover/*.png";
+
+@include all-index-pics-sprites;
 
 /* Overall */
+.main-nav.navbar-default {
+  .navbar-toggle .icon-bar {
+    background-color: $light-txt;
+  }
+}
 h2.section-heading {
   font-size: 60px;
   font-family: $semibold-font;
   margin: 0;
+  text-align: center;
+}
+h3.section-sub-heading {
+  margin: 0 0 125px;
+  font-size: 16px;
   text-align: center;
 }
 .light-section {
@@ -31,6 +45,16 @@ h2.section-heading {
   padding: 50px 0 100px;
   background: url("../img/header-bg.png") no-repeat;
   background-size: cover;
+  color: $light-txt;
+  &-top {
+    margin-bottom: 175px;
+  }
+  a, p, span {
+    color: $light-txt !important;
+  }
+  .header-img img {
+    width: 100%;
+  }
 }
 .main-nav.navbar-default {
   background: transparent;
@@ -48,7 +72,6 @@ h2.section-heading {
   .navbar-nav li a {
     padding: 0 24px;
     line-height: 38px;
-    color: $light-txt;
     text-transform: uppercase;
     font-size: 18px;
     font-family: "Myriad Pro Regular", sans-serif;
@@ -60,6 +83,80 @@ h2.section-heading {
     &:hover {
       background: $accent;
     }
+  }
+}
+.header-greeting {
+  padding-top: 65px;
+  margin-bottom: 50px;
+  &_title {
+    font-size: 60px;
+    font-family: $bold-font;
+    margin: 0 0 60px;
+  }
+  &_description {
+    margin: 0;
+    line-height: 30px;
+  }
+}
+.header-apps {
+  &_heading {
+    font-family: $semibold-font;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  &_links {
+    li:first-child {
+      margin-right: 34px;
+    }
+    a {
+      width: 200px;
+      height: 71px;
+      background-image: url("../img/sprites/app-links.png");
+      background-repeat: no-repeat;
+    }
+  }
+  &_appstore {
+    background-position: 0px 0px;
+  }
+  &_playmarket {
+    background-position: -232px 0px;
+  }
+}
+/* Features */
+.features {
+  background-blend-mode: color;
+  background-image: url("../img/features-bg.png");
+  background-position: top;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, .85);
+  h2.section-heading {
+    margin-bottom: 35px;
+  }
+  &-item {
+    cursor: pointer;
+  }
+  &-item_img {
+    height: 129px;
+    width: 129px;
+    margin: 0 auto 30px;
+    &.index-pics_hover-full_n_hover:hover {
+      @include index-pics_hover-sprite(full_hover);
+    }
+    &.index-pics_hover-image_g_hover:hover {
+      @include index-pics_hover-sprite(image_g_hover);
+    }
+    &.index-pics_hover-listen_n_hover:hover {
+      @include index-pics_hover-sprite(listen_hover);
+    }
+  }
+  &-item_title {
+    display: block;
+    font-size: 30px;
+    font-family: $semibold-font;
+    margin-bottom: 30px;
+  }
+  &-item_description {
+    margin: 0;
   }
 }
 

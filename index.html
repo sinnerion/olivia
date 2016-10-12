@@ -17,7 +17,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<!--<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">-->
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	
 	<link rel="stylesheet" href="css/fonts.css">
@@ -28,12 +28,12 @@
 <body>
 	<header class="main-header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-6"><a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
+            <div class="row main-header-top">
+                <div class="col-md-2 col-sm-2 col-xs-6"><a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
                 </div>
-                <nav class="col-md-8 col-sm-8 main-nav navbar navbar-default">
+                <nav class="col-md-10 col-sm-10 col-xs-6 main-nav navbar navbar-default">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav_collapse" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -41,24 +41,64 @@
                         </button>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse" id="main-nav_collapse">
                         <ul class="nav navbar-nav pull-right">
-                            <li><a class="active" href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
+                            <li><a class="active" href="#">Home</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
             </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-6 hidden-xs">
+                    <div class="header-img"><img src="img/header-iphones.png" alt=""/></div>
+                </div>
+                <div class="col-md-6 col-md-offset-1 col-sm-6 col-xs-12">
+                    <div class="header-greeting">
+                        <h1 class="header-greeting_title">Hello & Welcome<br/>to Olivia</h1>
+                        <p class="header-greeting_description">Compellingly fashion enterprise-wide services before client-based outsourcing. Enthusiastically reinvent inexpensive innovation rather than collaborative expertise. Synergistically communicate equity invested markets for tactical portals.</p>
+                    </div>
+                    <div class="header-apps">
+                        <div class="header-apps_heading text-uppercase">Download for free</div>
+                        <ul class="list-unstyled header-apps_links">
+                            <li><a class="header-apps_appstore" href="#"></a></li>
+                            <li><a class="header-apps_playmarket" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 	</header>
-    <section class="light-section">
+    <section class="light-section features text-center">
         <div class="container">
             <div class="row">
-                <h2 class="section-heading">Lorem ipsum dolor.</h2>
+                <h2 class="section-heading">Amazings Features</h2>
+                <h3 class="section-sub-heading">Authoritatively grow cross-platform web services rather than an expanded array of intellectual capital. Objectively disseminate clicks-and-mortar metrics vis-a-vis enterprise channels. Proactively strategize extensible value for distributed value. Continually whiteboard high-payoff experiences for and clicks leadership skills. Competently iterate dynamic results without team driven synergy.</h3>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="features-item">
+                        <div class="features-item_img index-pics_hover-full_n_hover index-pics-full_n"></div>
+                        <span class="features-item_title">Full Contactlist</span>
+                        <p class="features-item_description">Professionally iterate client-centric total linkage without client-centric metricsObjectiveintellectual capital.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="features-item">
+                        <div class="features-item_img index-pics_hover-image_g_hover index-pics-image_g"></div>
+                        <span class="features-item_title">Listen Music</span>
+                        <p class="features-item_description">Efficiently monetize compelling processes with integrated methods of empowerment plug-and-play channels.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="features-item">
+                        <div class="features-item_img index-pics_hover-listen_n_hover index-pics-listen_n"></div>
+                        <span class="features-item_title">Image Gallery</span>
+                        <p class="features-item_description">Rapidiously whiteboard 24/7 experiences and economically sound intellectual capital missionsystems.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -129,6 +169,7 @@
 	<!--<script src="libs/waypoints/waypoints.min.js"></script>-->
 	<script src="libs/animate/animate-css.js"></script>
 	<!--<script src="libs/plugins-scroll/plugins-scroll.js"></script>-->
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
     <script src="js/common.js"></script>
 	
