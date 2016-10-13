@@ -1,6 +1,7 @@
 @import "fonts";
 @import "font-awesome/font-awesome";
 @import "bootstrap";
+@import "bootstrap-compass";
 @import "vars";
 @import "base";
 @import "../img/assets/index-pics/*.png";
@@ -157,6 +158,36 @@ h3.section-sub-heading {
   }
   &-item_description {
     margin: 0;
+  }
+}
+/* New-app */
+.newapp {
+  padding-top: 90px;
+  color: $light-txt;
+  &-heading.section-heading {
+    font-family: $main-font;
+    color: $light-txt;
+    margin-bottom: 100px;
+  }
+  &-img img {
+    width: 100%;
+  }
+  &-option {
+    position: relative;
+    padding: 10px 0 0 57px;
+    span {
+      display: block;
+    }
+    &_sign {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 41.5px;
+    }
+    &_heading {
+      font-size: 20px;
+      font-family: $semibold-font;
+    }
   }
 }
 

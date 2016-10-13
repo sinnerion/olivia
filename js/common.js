@@ -3,6 +3,12 @@ $(window).load(function() {
 	$(".loader").delay(400).fadeOut("slow");
 });
 $(document).ready(function() {
+	// Header main-nav
+	$('.main-nav li a').click(function(){
+		$('a.active').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

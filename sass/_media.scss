@@ -1,12 +1,6 @@
 @import "vars";
 
-@media only screen and (max-device-width : 991px) {
-  h2.section-heading {
-    font-size: 30px;
-  }
-  h3.section-sub-heading {
-    font-size: 12px;
-  }
+@media only screen and (max-device-width : 1199px) {
   .main-nav.navbar-default {
     .navbar-toggle:hover,
     .navbar-toggle:focus {
@@ -23,10 +17,44 @@
   }
 }
 
+@media only screen and (max-device-width : 991px) {
+  h2.section-heading {
+    font-size: 28px;
+  }
+  h3.section-sub-heading {
+    font-size: 12px;
+  }
+  /*newapp*/
+  .newapp {
+    padding: 40px 0;
+    &-heading.section-heading {
+      margin-bottom: 50px;
+    }
+    &-option {
+      margin-bottom: 25px;
+      padding-left: 42px;
+      &_sign {
+        font-size: 30px;
+      }
+      &_heading {
+        font-size: 18px;
+      }
+      &_description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 991px) {
+and (max-device-width : 767px) {
+  /*header*/
+  .main-nav.navbar-default .navbar-nav li a {
+    padding: 0 10px;
+    font-size: 14px;
+  }
   .main-header-top {
     margin-bottom: 40px;
   }
@@ -56,10 +84,14 @@ and (max-device-width : 991px) {
       a {
         background-size: 200px;
         height: 32px;
-
       }
     }
   }
+  /*features*/
+  .features-item {
+    margin-bottom: 20px;
+  }
+
 }
 
 /* Smartphones (landscape) ----------- */

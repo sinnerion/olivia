@@ -60,6 +60,9 @@ body {
   position: relative;
   line-height: 1.6;
   overflow-x: hidden;
+  p {
+    margin: 0;
+  }
 }
 .hidden {
   display: none;
