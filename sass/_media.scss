@@ -94,11 +94,19 @@ and (max-width : 767px) {
       }
     }
   }
+  /*sections*/
+  section.colored-section,
+  section.light-section {
+    padding: 35px 0 !important;
+  }
   /*features*/
   .features-item {
     margin-bottom: 20px;
   }
-
+  /*reviews*/
+  .reviews {
+    font-size: 12px;
+  }
 }
 
 /* Smartphones (landscape) ----------- */

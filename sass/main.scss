@@ -242,17 +242,63 @@ h3.section-sub-heading {
       }
     }
   }
-  .owl-dots {
-    display: block;
+}
+/* Reviews */
+.reviews {
+  padding: 145px 0;
+  &-carousel {
+    .owl-dots {
+      text-align: center;
+    }
+    .owl-dot {
+      display: inline-block;
+      margin-top: 20px;
+      width: 15px;
+      height: 15px;
+      background: transparent;
+      border: 2px solid $light-txt;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin-right: 12px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover,
+      &.active {
+        background: $light-txt;
+      }
+    }
   }
-  .owl-dot {
-    font-size: 10px;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: #94cae6;
-    border-radius: 50%;
-    margin-right: 10px;
+  &-carousel_item {
+    color: $light-txt;
+    &-photo {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 5px solid $light-txt;
+      margin-right: 5%;
+      img {
+        width: 100%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    &-body {
+      padding-top: 30px;
+      float: right;
+      width: 70%;
+      p {
+        margin-bottom: 40px;
+      }
+    }
+    &-name {
+      margin-bottom: 10px;
+    }
   }
 }
 

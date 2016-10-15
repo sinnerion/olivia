@@ -12,25 +12,40 @@ $(document).ready(function() {
 	// Owl-Carousel (screenshots)
 	$('.screenshots-carousel').owlCarousel({
 		loop:true,
-		dots:true,
 		items:4,
 		margin:30,
+		dots:true,
 		responsive: {
 			0: {
-				center: true,
-				items: 1.5
+				center:true,
+				items:1.5,
+				dots:false
 			},
 			600: {
-				items: 3
+				items:3,
+				dots:true,
 			},
 			992: {
-				items: 4
+				items:4,
+				dots:true,
+			}
+		}
+	});
+	$('.reviews-carousel').owlCarousel({
+		loop:true,
+		items:1,
+		responsive: {
+			0: {
+				dots:false,
+			},
+			600: {
+				dots:true,
 			}
 		}
 	});
 	$(function(){
 		if($(window).width() <= 600) {
-			$('.screenshots-carousel').parent().css('padding', '0');
+			$('.owl-carousel').parent().css('padding', '0');
 		}
 	});
 
