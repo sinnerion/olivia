@@ -1,6 +1,7 @@
 @import "vars";
+@import "../img/assets/index-pics_hover/*.png";
 
-@media only screen and (max-device-width : 1199px) {
+@media only screen and (max-width : 1199px) {
   .main-nav.navbar-default {
     .navbar-toggle:hover,
     .navbar-toggle:focus {
@@ -17,7 +18,13 @@
   }
 }
 
-@media only screen and (max-device-width : 991px) {
+@media only screen and (min-width : 992px) {
+  .screenshots-carousel_item:hover .screenshots-carousel_item-hover {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width : 991px) {
   h2.section-heading {
     font-size: 28px;
   }
@@ -48,8 +55,8 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 767px) {
+and (min-width : 320px)
+and (max-width : 767px) {
   /*header*/
   .main-nav.navbar-default .navbar-nav li a {
     padding: 0 10px;
@@ -108,23 +115,23 @@ and (max-width : 320px) {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+and (min-width : 768px)
+and (max-width : 1024px) {
   /* Styles */
 }
 
 /* iPads (landscape) ----------- */
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (min-width : 768px)
+and (max-width : 1024px)
 and (orientation : landscape) {
   /* Styles */
 }
 
 /* iPads (portrait) ----------- */
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (min-width : 768px)
+and (max-width : 1024px)
 and (orientation : portrait) {
   /* Styles */
 }

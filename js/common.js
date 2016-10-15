@@ -9,6 +9,31 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
+	// Owl-Carousel (screenshots)
+	$('.screenshots-carousel').owlCarousel({
+		loop:true,
+		dots:true,
+		items:4,
+		margin:30,
+		responsive: {
+			0: {
+				center: true,
+				items: 1.5
+			},
+			600: {
+				items: 3
+			},
+			992: {
+				items: 4
+			}
+		}
+	});
+	$(function(){
+		if($(window).width() <= 600) {
+			$('.screenshots-carousel').parent().css('padding', '0');
+		}
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
